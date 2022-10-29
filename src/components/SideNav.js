@@ -77,7 +77,7 @@ const SideNav = () => {
             <p class="profile-name">Hana Neville</p>
           </li>
           <li>
-            <a href="/my-app/src/pages/LoginPage.js" id="logout" className="nav-link">
+            <a href="/login" id="logout" className="nav-link">
               <i id="icon" className="icon ph-sign-out"></i>Logout
             </a>
           </li>

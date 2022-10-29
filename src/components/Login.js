@@ -6,44 +6,54 @@ const Login = () => {
     const navigate = useNavigate();
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [isUsernameValid, setIsUsernameValid] = useState(true);
+    const [isPasswordValid, setIsPasswordValid] = useState(true);
 
     const user = {
         username: "Admin",
         password: "admin1",
     };
 
-    const passwordControl = document.querySelector(".input-control-u");
-    const usernameControl = document.querySelector(".input-control-p");
-    const click = document.querySelector(".button");
+    const validateForm = () => {
+        let isFormValid = true;
+        if (username.trim().length === 0) {
+            setIsUsernameValid(false);
+            isFormValid = false;
+        }
+        if (password.trim().length === 0) {
+            setIsPasswordValid(false);
+            isFormValid = false;
+        }
+
+        return isFormValid;
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!validateForm()) return;
 
         if (username === user.username && password === user.password) {
             navigate("/dashboard");
             console.log("User Logged In");
         }
-
-        if (username === user.username) {
-            click.addEventListener("click", () => {
-                usernameControl.classList.add("success");
-            });
-        } else {
-            click.addEventListener("click", () => {
-                usernameControl.classList.add("error");
-            });
-            console.log("Please check you username");
-        }
-
-        if (password === user.password) {
-            passwordControl.classList.add("success");
-        } else {
-            click.addEventListener("click", () => {
-                passwordControl.classList.add("error");
-            });
-            console.log("Wrong password");
-        }
     };
+
+    function changeUsernameValue(value) {
+        if (value.length > 0) {
+            setIsUsernameValid(true);
+        }
+
+        setUsername(value);
+    }
+
+    function changePasswordValue(value) {
+        if (value.length > 0) {
+            setIsPasswordValid(true);
+        }
+
+        setPassword(value);
+    }
 
     return (
         <div>
@@ -54,34 +64,29 @@ const Login = () => {
                         <h2 className="header-secondary">Welcome!</h2>
                         <p className="text-1">Sing in</p>
                         <form onSubmit={handleSubmit}>
-                            <div className="input-control-u">
+                            <div className={`input-control-u ${!isUsernameValid ? "error" : ''}`} >
                                 <input
                                     className="input username"
                                     type="text"
                                     placeholder="Username"
-                                    required
                                     value={username}
-                                    onChange={(e) => setUsername(e.target.value)}
+                                    onChange={(e) => changeUsernameValue(e.target.value)}
                                 />
                             </div>
-                            <div className="input-control-p">
+                            <div className={`input-control-p ${!isPasswordValid ? "error" : ''}`} >
                                 <input
                                     className="input password"
                                     type="Password"
                                     placeholder="Password"
-                                    required
                                     value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
+                                    onChange={(e) => changePasswordValue(e.target.value)}
                                 />
                             </div>
-                            <br />
                             <div className="right">
                                 <a className="forgot-password" href="my-app/src/pages/LoginPage.js/">
                                     Forgot password?
                                 </a>
                             </div>
-
-                            <br />
                             <button className="button" type="submit">
                                 Continue
                             </button>

@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 const Search = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
-  const schoolName = { name: "Aware" };
+  const schoolName = "Aware";
   const msg = document.querySelector(".block");
   const click = document.querySelector(".button");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (name === schoolName.name) {
+    if (name.toLowerCase() === schoolName.toLowerCase()) {
       navigate("/login");
     } else {
       click.addEventListener("click", () => {
