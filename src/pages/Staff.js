@@ -1,8 +1,8 @@
 import React from "react";
 
-import SideNav from "../SideNav";
+import SideNav from "../components/SideNav";
 
-import "../css/staff.css";
+import "../assets/css/staff.css";
 
 const Staff = () => {
   return (

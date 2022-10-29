@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import "./css/sidenav.css";
+import "../assets/css/sidenav.css";
 
 const SideNav = () => {
   const [active, setActive] = useState(true);
@@ -72,12 +72,12 @@ const SideNav = () => {
             <img
               className="img"
               alt="profile-img"
-              src="img/randomTeacher.jpg"
+              src="my-app/src/assets/img/randomTeacher.jpg"
             ></img>
             <p class="profile-name">Hana Neville</p>
           </li>
           <li>
-            <a href="/login" id="logout" className="nav-link">
+            <a href="/my-app/src/pages/LoginPage.js" id="logout" className="nav-link">
               <i id="icon" className="icon ph-sign-out"></i>Logout
             </a>
           </li>

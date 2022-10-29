@@ -1,8 +1,8 @@
 import React from "react";
 
-import SideNav from "../SideNav";
+import SideNav from "../components/SideNav";
 
-import "../css/dashboard.css";
+import "../assets/css/dashboard.css";
 
 const Dashboard = () => {
   return (

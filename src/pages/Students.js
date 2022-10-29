@@ -1,8 +1,8 @@
 import React from "react";
 
-import SideNav from "../SideNav";
+import SideNav from "../components/SideNav";
 
-import "../css/students.css";
+import "../assets/css/students.css";
 
 const Students = () => {
   return (

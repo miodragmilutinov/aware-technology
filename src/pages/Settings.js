@@ -1,8 +1,8 @@
 import React from "react";
 
-import SideNav from "../SideNav";
+import SideNav from "../components/SideNav";
 
-import "../css/settings.css";
+import "../assets/css/settings.css";
 
 const Settings = () => {
   return (
