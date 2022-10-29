@@ -1,16 +1,16 @@
 import React from "react";
 
-import SideNav from "../components/SideNav";
-
 import "../assets/css/teachers.css";
+import SidebarContentLayout from "../components/layouts/SidebarContentLayout";
 
 const Teachers = () => {
   return (
     <div>
-      <SideNav />
-      <section className="teachers">
-        <p className="header">Teachers</p>
-      </section>
+        <SidebarContentLayout>
+            <section className="teachers">
+                <p className="header">Teachers</p>
+            </section>
+        </SidebarContentLayout>
     </div>
   );
 };

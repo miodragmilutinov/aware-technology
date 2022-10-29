@@ -1,8 +1,15 @@
 /* MAIN */
+.dashboard-layout {
+  display: flex;
+  align-content: flex-start;
+}
 
-.dashboard {
-  padding-left: 23%;
-  padding-top: 3%;
+.dashboard-layout .sidebar-layout {
+  width: 30%;
+}
+
+.dashboard-layout .content-layout {
+  width: 70%;
 }
 
 .header {

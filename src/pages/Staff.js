@@ -1,16 +1,15 @@
 import React from "react";
 
-import SideNav from "../components/SideNav";
-
-import "../assets/css/staff.css";
+import SidebarContentLayout from "../components/layouts/SidebarContentLayout";
 
 const Staff = () => {
   return (
     <div>
-      <SideNav />
-      <section className="staff">
-        <p className="header">Staff</p>
-      </section>
+        <SidebarContentLayout>
+            <section className="staff">
+                <p className="header">Staff</p>
+            </section>
+        </SidebarContentLayout>
     </div>
   );
 };

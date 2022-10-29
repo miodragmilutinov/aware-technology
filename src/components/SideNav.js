@@ -2,8 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import "../assets/css/sidenav.css";
-
 const SideNav = () => {
   const [active, setActive] = useState(true);
 
@@ -67,21 +65,19 @@ const SideNav = () => {
             <i id="icon" className="icon ph-gear"></i>Settings
           </NavLink>
         </li>
-        <div id="paddingTop">
-          <li>
-            <img
-              className="img"
-              alt="profile-img"
-              src="my-app/src/assets/img/randomTeacher.jpg"
-            ></img>
-            <p class="profile-name">Hana Neville</p>
-          </li>
-          <li>
-            <a href="/login" id="logout" className="nav-link">
-              <i id="icon" className="icon ph-sign-out"></i>Logout
-            </a>
-          </li>
-        </div>
+        <li className="margin-top-auto">
+          <img
+            className="img"
+            alt="profile-img"
+            src={require('../assets/img/randomTeacher.jpg')}
+          ></img>
+          <p class="profile-name">Hana Neville</p>
+        </li>
+        <li>
+          <a href="/login" id="logout" className="nav-link">
+            <i id="icon" className="icon ph-sign-out"></i>Logout
+          </a>
+        </li>
       </ul>
     </nav>
   );

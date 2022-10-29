@@ -1,16 +1,15 @@
 import React from "react";
 
-import SideNav from "../components/SideNav";
-
-import "../assets/css/settings.css";
+import SidebarContentLayout from "../components/layouts/SidebarContentLayout";
 
 const Settings = () => {
   return (
     <div>
-      <SideNav />
-      <section className="settings">
-        <p className="header">Settings</p>
-      </section>
+        <SidebarContentLayout>
+            <section className="settings">
+                <p className="header">Settings</p>
+            </section>
+        </SidebarContentLayout>
     </div>
   );
 };

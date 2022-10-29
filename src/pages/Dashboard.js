@@ -1,16 +1,16 @@
 import React from "react";
 
-import SideNav from "../components/SideNav";
-
 import "../assets/css/dashboard.css";
+import SidebarContentLayout from "../components/layouts/SidebarContentLayout";
 
 const Dashboard = () => {
   return (
     <div>
-      <SideNav />
-      <section className="dashboard">
-        <p className="header">Dashboard</p>
-      </section>
+        <SidebarContentLayout>
+            <section className="dashboard">
+                <p className="header">Dashboard</p>
+            </section>
+        </SidebarContentLayout>
     </div>
   );
 };
