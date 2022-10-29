@@ -1,0 +1,83 @@
+.sidebar {
+  padding-left: 20px;
+  position: fixed;
+  left: 0%;
+  width: 300px;
+  height: 100%;
+  -webkit-box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar header {
+  font-weight: bold;
+  font-size: 22px;
+  color: black;
+  line-height: 70px;
+}
+
+.sidebar ul a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 16px;
+  color: black;
+  transition: 0.4s;
+}
+
+#icon {
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+ul a:hover {
+  color: rgb(52, 78, 230);
+  /* padding-left: 10px; */
+}
+
+i.icon {
+  display: flex;
+}
+
+.img {
+  margin-right: 10px;
+  width: 32px;
+  border-radius: 100%;
+}
+
+#paddingTop {
+  padding-top: 70%;
+}
+#logout {
+  display: flex;
+  align-items: center;
+  color: #fa5252;
+}
+
+.user {
+  font-weight: 500;
+  padding-top: 220px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: black !important;
+}
+
+.link-active {
+  color: rgb(52, 78, 230) !important
+;
+}
+
+.border {
+  position: absolute;
+  left: 0;
+  top: 10.1%;
+  width: 10px;
+  height: 50px;
+  border-right: 5px solid rgb(52, 78, 230);
+  border-radius: 0px 5px 5px 0px;
+}

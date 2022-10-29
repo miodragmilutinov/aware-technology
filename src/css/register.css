@@ -1,0 +1,124 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  flex-direction: column;
+  gap: 15px;
+  z-index: -1;
+}
+
+.container {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 450px;
+  padding: 40px;
+  text-align: center;
+  /* border-radius */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 25px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 7px 25px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 7px 25px;
+  z-index: 1;
+}
+
+.content {
+  padding: 10px;
+  text-align: center;
+}
+
+.header-secondary {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.text-1 {
+  padding-bottom: 15px;
+}
+
+.input {
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 255, 0.08);
+  color: darkblue;
+  border: 0;
+  outline: 0;
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 100px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 255, 0.18);
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  color: darkblue;
+}
+
+::-webkit-input-placeholder {
+  color: darkblue;
+  transition: opacity 0.2s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.school-logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  color: black;
+  font-size: 13px;
+}
+.right {
+  text-align: right;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+}
+
+.register {
+  text-decoration: underline;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.text-3 {
+  padding-top: 25px;
+}
+
+.header-tertiary-1 {
+  padding-bottom: 50px;
+  color: rgba(37, 71, 184, 0.255);
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
